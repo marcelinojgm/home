@@ -103,6 +103,13 @@ public class Picture
         }
     }
     
+     /*
+     * reliza efecto de puesta de sol de sun2
+     */
+    public void moveSun()
+    {
+        sun2.slowMoveVertical(200); 
+    }
    
     
 }
