@@ -70,6 +70,7 @@ public class Picture
         campo.moveVertical(150);
         campo.changeSize(900);
         campo.makeVisible();
+        
            
          
        
@@ -109,7 +110,8 @@ public class Picture
      */
     public void moveSun()
     {
-        sun2.slowMoveVertical(200); 
+        sun2.slowMoveVertical(200);
+        setBlackAndWhite();
     }
    
     
