@@ -16,7 +16,8 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle sun2;
-     private Circle campo;
+    private Circle campo;
+    private Person persona;
 
     /**
      * Constructor for objects of class Picture
@@ -70,8 +71,8 @@ public class Picture
         campo.moveVertical(150);
         campo.changeSize(900);
         campo.makeVisible();
+        moveSun();
         
-           
          
        
     }
@@ -106,13 +107,26 @@ public class Picture
     }
     
      /**
-     * Reliza efecto de puesta de sol de sun2
+     * Reliza efecto de puesta de sol de sun2 
+     * y puesta de blanco y negro
      */
     public void moveSun()
     {
         sun2.slowMoveVertical(200);
         setBlackAndWhite();
     }
-   
     
+   /**
+    * metodo para crear una persona que se mueve 
+    */
+    public void movePerson()
+    {
+        
+        persona = new Person();
+        persona.moveHorizontal(-200);
+        persona.moveVertical(20);
+        persona.makeVisible();
+        persona.slowMoveHorizontal(100);
+        
+    }
 }
