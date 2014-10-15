@@ -86,6 +86,7 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            campo.changeColor("black");
         }
     }
 
@@ -103,8 +104,8 @@ public class Picture
         }
     }
     
-     /*
-     * reliza efecto de puesta de sol de sun2
+     /**
+     * Reliza efecto de puesta de sol de sun2
      */
     public void moveSun()
     {
